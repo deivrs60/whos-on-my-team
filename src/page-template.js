@@ -12,7 +12,7 @@ const generateManager = managerData => {
     <div class="col bg-light shadow m-2 p-0">
     <div class="bg-primary text-light p-2">
     <h2>${manager.getName()}</h2>
-    <h3><i class="fas fa-hands-helping px-2"></i><${manager.getRole()}</h3>
+    <h3><i class="fas fa-hands-helping px-2"></i>${manager.getRole()}</h3>
     </div>
 
     <div class="bg-white mx-3 my-5">
