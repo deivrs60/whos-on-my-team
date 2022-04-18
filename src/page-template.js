@@ -12,7 +12,7 @@ const generateManager = managerData => {
     <div class="col bg-light shadow m-2 p-0">
     <div class="bg-primary text-light p-2">
     <h2>${manager.getName()}</h2>
-    <h3><i class=fas fa-hands-helping px-2"></i><${manager.getRole()}</h3>
+    <h3><i class="fas fa-hands-helping px-2"></i><${manager.getRole()}</h3>
     </div>
 
     <div class="bg-white mx-3 my-5">
@@ -20,7 +20,7 @@ const generateManager = managerData => {
     <p class="border mb-0 p-2">Email: <a href="mailto:${manager.getEmail()}" target="_blank">${manager.getEmail()}</a></p>
     <p class="border mb-0 p-2">Office Number: ${manager.getOfficeNumber()}</p>
     </div>
-    </div
+    </div>
     `
 }
 
@@ -36,7 +36,7 @@ const generateEngineer = engineerData => {
         const engineer = new Engineer(element.engineerName, element.engineerID, element.engineerEmail, element.engineerGithub)
         return `
         <div class ="col bg-light shadow m-2 p-0">
-        <div class="bg-primar text-light p-2">
+        <div class="bg-primary text-light p-2">
         <h2>${engineer.getName()}</h2>
         <h3><i class="fas fa-headset px-2"></i>${engineer.getRole()}</h3>
         </div>
@@ -68,7 +68,7 @@ const generateIntern = internData => {
         <h3><i class="fas fa-graduation-cap px-2"></i>${intern.getRole()}</h3>
         </div>
         <div class="bg-white mx-3 my-5">
-        <p class="border mb-0 p-2>ID: ${intern.getId()}</p>
+        <p class="border mb-0 p-2">ID: ${intern.getId()}</p>
         <p class="border mb-0 p-2"> Email: <a href="mailto: ${intern.getEmail()}" target="_blank">${intern.getEmail()}</a></p>
         <p class="border mb-0 p-2">School: ${intern.getSchool()}</p>
         </div>
@@ -97,6 +97,6 @@ module.exports = templateData => {
     ${generateManager(templateData)}
     ${generateEngineer(templateData)}
     ${generateIntern(templateData)}
-    
+
     `
 }
